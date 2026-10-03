@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Encabezados Meta de Seguridad -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:;">
+
+  <title>vsMOON Studio </title>
+  <link rel="icon" type="image/png" href="/img/logoeditado.png">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navegación Responsiva -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <img src="/img/logoeditado.png" alt="vsMOON Logo" loading="lazy">
+        <span>vsMOON Studio <small>v1.8</small></span>
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#caracteristicas">Características</a>
+        <a href="#galeria">Capturas</a>
+        <a href="#desarrollador">Desarrollador</a>
+        <a href="#pixelblade">Pixelblade Games</a>
+        <a href="#faq">Preguntas Frecuentes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="nav-right-controls">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Cambiar tema visual">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="#descarga" class="btn-nav" aria-label="Descargar vsMOON Studio v1.8">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+          <span>Descargar</span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-links">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="badge-v18"><i class="fa-solid fa-sparkles"></i> ¡Versión 1.8 Ya Disponible!</span>
+        <h1>Más que un simple editor. Tu lienzo de desarrollo visual y lógica.</h1>
+        <p>Un editor de texto rápido, nativo e intuitivo cargado con herramientas integradas: diagramas de flujo PSeInt, gráficos C VGA, diagramas de Venn interactivos y modelado de bases de datos SQL.</p>
+        
+        <div class="hero-actions">
+          <a href="#descarga" class="btn-primary">
+            <i class="fa-solid fa-download"></i> Descargar vsMOON Studio 1.8
+          </a>
+          <a href="#galeria" class="btn-secondary">
+            <i class="fa-solid fa-play"></i> Ver capturas
+          </a>
+        </div>
+
+        <div class="hero-specs">
+          <span><i class="fa-solid fa-bolt"></i> Inicio ultrarrápido</span>
+          <span><i class="fa-solid fa-microchip"></i> Portable / JDK 21 integrados</span>
+          <span><i class="fa-solid fa-laptop-code"></i> Sin dependencias pesadas</span>
+        </div>
+      </div>
+
+      <div class="hero-preview">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="window-title">vsMOON Studio v1.8</span>
+          </div>
+          <div class="window-body">
+            <img src="/img/image.png" id="main-hero-img" alt="vsMOON Studio Interface" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Características principales -->
+  <section id="caracteristicas" class="features">
+    <div class="section-title">
+      <h2>Módulos Visuales Integrados</h2>
+      <p>Un editor de texto diseñado para potenciar tu aprendizaje y lógica de programación sin salir del entorno.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Visual Flow PSeInt</h3>
+        <p>Genera y diseña diagramas de flujo ejecutables mientras programas tus algoritmos en pseudocódigo.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-shapes"></i></div>
+        <h3>Modo C Gráfico & VGA</h3>
+        <p>Prueba coordenadas y renderizado de primitivas gráficas (Círculos, Líneas, Rectángulos) con paletas VGA en tiempo real.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+        <h3>Diagramas de Venn</h3>
+        <p>Calcula conjuntos por extensión, operaciones algebraicas de conjuntos y sombreado gráfico al instante.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Visor de Base de Datos SQL</h3>
+        <p>Visualiza relacionalmente tus sentencias <code>CREATE TABLE</code>, claves primarias y foráneas automáticamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería interactiva -->
+  <section id="galeria" class="gallery">
+    <div class="section-title">
+      <h2>Capturas del Editor</h2>
+      <p>Haz clic o toca cualquier funcionalidad para explorarla en el visor interactivo.</p>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-img="/img/cap4.png">
+          <i class="fa-solid fa-sitemap"></i> Diagramas de Flujo
+        </button>
+        <button class="tab-btn" data-img="/img/cap3.png">
+          <i class="fa-solid fa-palette"></i> C Gráfico / VGA
+        </button>
+        <button class="tab-btn" data-img="/img/cap2.png">
+          <i class="fa-solid fa-circle-nodes"></i> Diagramas de Venn
+        </button>
+        <button class="tab-btn" data-img="/img/cap1.png">
+          <i class="fa-solid fa-table"></i> Esquemas SQL DB
+        </button>
+      </div>
+
+      <div class="gallery-display">
+        <div class="display-frame">
+          <img src="/img/cap4.png" id="gallery-viewer" alt="Captura vsMOON Studio" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Sobre el Desarrollador (UNI) & Créditos de Colaboradores -->
+  <section id="desarrollador" class="dev-section">
+    <div class="dev-container">
+      <div class="dev-card">
+        <div class="dev-photo-wrapper">
+          <img src="/img/yo.png" alt="Guillermo José Ortis Amador - Desarrollador" class="dev-photo" loading="lazy">
+          <div class="dev-badge"><i class="fa-solid fa-graduation-cap"></i> Estudiante UNI</div>
+        </div>
+        <div class="dev-info">
+          <h2>Sobre el Creador & El Origen del Proyecto</h2>
+          <p class="dev-role">Jhos Amador — Estudiante de Ingeniería en Computación (UNI)</p>
+          <p class="dev-text">
+            Este software fue concebido y programado totalmente desde cero. Nació de la experiencia real vivida desde primer año en las aulas de clase y laboratorios. 
+          </p>
+          <p class="dev-text">
+            Sabiendo las dificultades y la cantidad de herramientas aisladas que usamos día a día (pseudocódigo, gráficos, lógica de conjuntos, SQL), <strong>vsMOON Studio</strong> fue pensado especialmente para facilitar la transición a los estudiantes de nuevo ingreso, ofreciéndoles un entorno unificado, liviano y cómodo donde practicar sin complicaciones.
+          </p>
+        </div>
+      </div>
+
+      <!-- Módulo de Colaboradores Acreditados -->
+      <div class="team-credits-card">
+        <h3><i class="fa-solid fa-users"></i> Colaboradores del Proyecto</h3>
+        <p>Agradecimiento especial al equipo universitario por su esfuerzo y colaboración durante el desarrollo:</p>
+        <div class="team-grid">
+          <div class="team-member">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <span>anaHI luna</span>
+          </div>
+          <div class="team-member">
+            <i class="fa-solid fa-code"></i>
+            <span>hetsamary</span>
+          </div>
+          <div class="team-member">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>rodrigo alessandro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Pixelblade Games -->
+  <section id="pixelblade" class="pixelblade-section">
+    <div class="pixelblade-container">
+      <div class="pixelblade-header">
+        <img src="/img/pixel.png" alt="Pixelblade Games Logo" class="pb-hero-logo" loading="lazy">
+        <div>
+          <h2>El Nacimiento de Pixelblade Games</h2>
+          <span class="pb-subtitle">Pasión por el software, arte y videojuegos</span>
+        </div>
+      </div>
+
+      <div class="pixelblade-grid">
+        <div class="pb-card">
+          <div class="pb-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>Dungeon Knight RPG</h3>
+          <p>
+            El sello de <strong>Pixelblade Games</strong> nació oficialmente durante el desarrollo del videojuego 2D RPG <em>"Dungeon Knight"</em>. Un proyecto ambicioso donde exploramos mazmorras con animaciones, mapas y mecánicas hechas 100% a mano.
+          </p>
+        </div>
+
+        <div class="pb-card">
+          <div class="pb-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Sello de Calidad</h3>
+          <p>
+            Desde entonces, el logo de Pixelblade representa cada proyecto grande y complejo que desarrollamos, sirviendo como testimonio del crecimiento técnico y del conocimiento acumulado a lo largo de la carrera.
+          </p>
+        </div>
+
+        <div class="pb-card">
+          <div class="pb-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Próximos Proyectos</h3>
+          <p>
+            ¡vsMOON Studio v1.8 es solo el principio! Actualmente tenemos más herramientas de desarrollo, utilidades de productividad y juegos en curso que verán la luz muy pronto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Preguntas Frecuentes (FAQ Accordion) -->
+  <section id="faq" class="faq-section">
+    <div class="section-title">
+      <h2>Preguntas Frecuentes</h2>
+      <p>Resolvemos las dudas más comunes de los estudiantes de nuevo ingreso.</p>
+    </div>
+
+    <div class="accordion-container">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>¿Necesito instalar Java para ejecutar vsMOON Studio?</span>
+          <i class="fa-solid fa-chevron-down accordion-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>No. vsMOON Studio v1.8 viene 100% empaquetado de forma portable e incluye su propio entorno de ejecución (JDK 21) integrado, por lo que funciona al instante en cualquier computadora sin necesidad de instalaciones adicionales.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>¿El programa es totalmente gratuito?</span>
+          <i class="fa-solid fa-chevron-down accordion-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Sí, es un software libre y totalmente gratuito creado por y para estudiantes de la UNI, diseñado con la finalidad de aportar al aprendizaje académico y facilitar las prácticas grupales.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>¿Puedo usarlo en las computadoras de los laboratorios de la universidad?</span>
+          <i class="fa-solid fa-chevron-down accordion-icon"></i>
+        </button>
+        <div class="accordion-content">
+          <p>¡Por supuesto! Al ser una aplicación portable (.exe), puedes llevar el programa dentro de una memoria USB y ejecutarlo directamente en las computadoras de los laboratorios de la universidad sin requerir permisos de administrador.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Canales Oficiales / Redes de Pixelblade Games -->
+  <section id="contacto" class="contact-section">
+    <div class="section-title">
+      <h2>Conecta con Pixelblade Games</h2>
+      <p>¿Tienes sugerencias, quieres reportar un error o conocer nuestros nuevos lanzamientos? ¡Comunícate con nosotros!</p>
+    </div>
+
+    <div class="social-cards-grid">
+      <a href="https://github.com/css40" target="_blank" rel="noopener noreferrer" class="social-card github">
+        <div class="social-icon"><i class="fa-brands fa-github"></i></div>
+        <h3>GitHub Oficial</h3>
+        <p>Explora repositorios, actualizaciones y proyectos en código abierto de Pixelblade Games.</p>
+        <span class="social-link-text">Ver Organización <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="https://wa.me/58703325" target="_blank" rel="noopener noreferrer" class="social-card whatsapp">
+        <div class="social-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <h3>Canal / Soporte WhatsApp</h3>
+        <p>Ponte en contacto directo para soporte técnico, dudas de uso o unirte a la comunidad de estudiantes.</p>
+        <span class="social-link-text">Enviar Mensaje <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+
+      <a href="https://discord.gg/tu-servidor-pixelblade" target="_blank" rel="noopener noreferrer" class="social-card discord">
+        <div class="social-icon"><i class="fa-brands fa-discord"></i></div>
+        <h3>Comunidad Pixelblade</h3>
+        <p>Únete a nuestra comunidad para estar al tanto del desarrollo de videojuegos y nuevos editores.</p>
+        <span class="social-link-text">Unirme al Servidor <i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Sección de descarga -->
+  <section id="descarga" class="download-section">
+    <div class="download-card">
+      <h2>Obtén vsMOON Studio v1.8</h2>
+      <p>Compatible con Windows y ejecutable portable con entorno runtime empaquetado.</p>
+      
+      <div class="download-buttons">
+        <a href="/StudioMoon.zip" class="btn-download-main" download rel="noopener noreferrer">
+          <i class="fa-brands fa-windows"></i>
+          <div class="btn-text">
+            <span>Descargar ejecutable</span>
+            <strong>vsMOON Studio v1.8 (.exe)</strong>
+          </div>
+        </a>
+      </div>
+      <p class="download-info">Empaquetado y distribuido de forma portable. No requiere instaladores complejos.</p>
+    </div>
+  </section>
+
+  <!-- Créditos y Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="/img/pixel.png" alt="Pixelblade Games" class="footer-logo" loading="lazy">
+        <div>
+          <p>Desarrollado con pasión por <strong>Pixelblade Games</strong></p>
+          <div class="footer-social-icons">
+            <a href="https://github.com/PixelbladeGames" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Pixelblade Games"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/tu-numero-o-canal-pixelblade" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Pixelblade Games"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://discord.gg/tu-servidor-pixelblade" target="_blank" rel="noopener noreferrer" aria-label="Discord Pixelblade Games"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-academic">
+        <img src="/img/UNI.png" alt="Universidad Nacional de Ingeniería" class="footer-uni-logo" loading="lazy">
+        <p>Proyecto respaldado por el espíritu académico e innovador de la <strong>Universidad Nacional de Ingeniería (UNI)</strong></p>
+      </div>
+    </div>
+    
+    <div class="footer-legal">
+      <button id="open-terms-btn" class="btn-link">Términos y Condiciones</button>
+      <span>•</span>
+      <button id="open-privacy-btn" class="btn-link">Política de Privacidad</button>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 vsMOON Studio & Pixelblade Games. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Banner de Consentimiento de Cookies -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite">
+    <div class="cookie-content">
+      <i class="fa-solid fa-cookie-bite cookie-icon"></i>
+      <p>Este sitio web utiliza cookies técnicas locales únicamente para garantizar una navegación óptima y recordar tus preferencias. No recopilamos datos personales sensibles.</p>
+      <div class="cookie-actions">
+        <button id="accept-cookies-btn" class="btn-cookie-accept">Aceptar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Legal (Términos, Condiciones y Privacidad) -->
+  <div id="legal-modal" class="legal-modal" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modal-title">Términos y Condiciones</h3>
+        <button class="modal-close-btn" id="close-modal-btn" aria-label="Cerrar modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Contenido dinámico -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Script JS separado -->
+  <script src="script.js"></script>
+</body>
+</html>
